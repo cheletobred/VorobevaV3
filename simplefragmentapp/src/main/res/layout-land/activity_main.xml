@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFragment1"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onClick"
+            android:text="fragment1" />
+
+        <Button
+            android:id="@+id/btnFragment2"
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:onClick="onClick"
+            android:text="fragment2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/list"
+            android:name="ru.mirea.vorobevavi.simplefragmentapp.FirstFragment"
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <fragment android:name="ru.mirea.vorobevavi.simplefragmentapp.SecondFragment"
+            android:id="@+id/viewer"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
